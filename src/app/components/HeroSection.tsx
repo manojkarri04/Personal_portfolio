@@ -38,24 +38,32 @@ export default function HeroSection() {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 rounded-2xl bg-[#3B82F6] hover:bg-[#60A5FA] text-white font-medium flex items-center gap-2 transition-all shadow-lg shadow-[#3B82F6]/20"
-            >
-              View Projects
-              <ArrowRight className="w-5 h-5" />
-            </motion.button>
+  {/* Scroll to Projects Section */}
+  <motion.a
+    href="#projects"
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+    className="px-8 py-4 rounded-2xl bg-[#3B82F6] hover:bg-[#60A5FA] text-white font-medium flex items-center gap-2 transition-all shadow-lg shadow-[#3B82F6]/20 cursor-pointer"
+  >
+    View Projects
+    <ArrowRight className="w-5 h-5" />
+  </motion.a>
 
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 rounded-2xl bg-[#111827] hover:bg-[#1F2937] border border-[#1F2937] text-[#F9FAFB] font-medium flex items-center gap-2 transition-all backdrop-blur-sm"
-            >
-              <Download className="w-5 h-5" />
-              Download Resume
-            </motion.button>
-          </div>
+  {/* Download Resume Link */}
+  <motion.a
+    // Ensure you put your resume PDF inside your 'public' folder and name it 'resume.pdf'
+    href="/resume.pdf" 
+    download="Manoj_Karri_Resume.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+    className="px-8 py-4 rounded-2xl bg-[#111827] hover:bg-[#1F2937] border border-[#1F2937] text-[#F9FAFB] font-medium flex items-center gap-2 transition-all backdrop-blur-sm cursor-pointer"
+  >
+    <Download className="w-5 h-5" />
+    Download Resume
+  </motion.a>
+</div>
         </motion.div>
 
         {/* Right Visual */}

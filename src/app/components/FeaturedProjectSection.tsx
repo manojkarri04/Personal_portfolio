@@ -84,26 +84,36 @@ export default function FeaturedProjectSection() {
                     ))}
                   </div>
                 </div>
+{/* 
+              CTA Buttons */}
 
-                CTA Buttons
-                <div className="flex flex-wrap gap-4 pt-4">
-                  <motion.button
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="px-6 py-3 rounded-2xl bg-[#3B82F6] hover:bg-[#60A5FA] text-white font-medium flex items-center gap-2 transition-all"
-                  >
-                    <Github className="w-5 h-5" />
-                    View on GitHub
-                  </motion.button>
-                  <motion.button
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="px-6 py-3 rounded-2xl bg-[#1F2937] hover:bg-[#374151] border border-[#1F2937] text-[#F9FAFB] font-medium flex items-center gap-2 transition-all"
-                  >
-                    <ExternalLink className="w-5 h-5" />
-                    Live Demo
-                  </motion.button>
-                </div>
+<div className="flex flex-wrap gap-4 pt-4">
+  <motion.a
+    href="https://github.com/manojkarri04/CareCompanion"
+    target="_blank"
+    rel="noopener noreferrer"
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+    className="px-6 py-3 rounded-2xl bg-[#3B82F6] hover:bg-[#60A5FA] text-white font-medium flex items-center gap-2 transition-all cursor-pointer"
+  >
+    <Github className="w-5 h-5" />
+    View on GitHub
+  </motion.a>
+
+  <motion.a
+    href="YOUR_LIVE_DEMO_LINK_HERE" 
+    target="_blank"
+    rel="noopener noreferrer"
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+    className="px-6 py-3 rounded-2xl bg-[#1F2937] hover:bg-[#374151] border border-[#1F2937] text-[#F9FAFB] font-medium flex items-center gap-2 transition-all cursor-pointer"
+  >
+    <ExternalLink className="w-5 h-5" />
+    Live Demo
+  </motion.a>
+</div>
+
+
               </div>
 
               {/* Project Mockup */}

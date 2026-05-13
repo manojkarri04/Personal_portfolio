@@ -30,7 +30,7 @@ export default function EducationSection() {
   ];
 
   return (
-    <section id="education" className="py-32 px-6 bg-gradient-to-b from-transparent via-[#111827]/30 to-transparent">
+    <section id="education" className="py-32 px-6 bg-linear-to-b from-transparent via-[#111827]/30 to-transparent">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -40,12 +40,12 @@ export default function EducationSection() {
           className="text-center mb-16"
         >
           <h2 className="text-5xl md:text-6xl font-bold text-[#F9FAFB] mb-6">Education</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-[#3B82F6] to-[#60A5FA] mx-auto rounded-full shadow-[0_0_20px_rgba(59,130,246,0.5)]" />
+          <div className="w-24 h-1 bg-linear-to-r from-[#1a2940] to-[#60A5FA] mx-auto rounded-full shadow-[0_0_20px_rgba(59,130,246,0.5)]" />
         </motion.div>
 
         <div className="relative max-w-4xl mx-auto">
           {/* Timeline Line */}
-          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#3B82F6] via-[#60A5FA] to-transparent hidden md:block" />
+          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-linear-to-b from-[#3B82F6] via-[#60A5FA] to-transparent hidden md:block" />
 
           <div className="space-y-12">
             {education.map((edu, index) => (
@@ -64,7 +64,7 @@ export default function EducationSection() {
                 <div className="md:ml-20 group">
                   <div className="relative p-8 rounded-3xl bg-[#111827]/50 backdrop-blur-xl border border-[#1F2937] hover:border-[#3B82F6]/50 transition-all overflow-hidden">
                     {/* Gradient Overlay on Hover */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-[#3B82F6]/5 to-[#60A5FA]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    <div className="absolute inset-0 bg-linear-to-br from-[#3B82F6]/5 to-[#60A5FA]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
                     <div className="relative space-y-4">
                       {/* Header with Icon */}
@@ -110,7 +110,7 @@ export default function EducationSection() {
                     </div>
 
                     {/* Corner Glow Effect */}
-                    <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#3B82F6]/10 to-[#60A5FA]/10 opacity-0 group-hover:opacity-100 blur-3xl -z-10 transition-opacity" />
+                    <div className="absolute top-0 right-0 w-32 h-32 bg-linear-to-br from-[#3B82F6]/10 to-[#60A5FA]/10 opacity-0 group-hover:opacity-100 blur-3xl -z-10 transition-opacity" />
                   </div>
                 </div>
               </motion.div>

@@ -1,5 +1,6 @@
 import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
+import EducationSection from './components/EducationSection';
 import ExperienceSection from './components/ExperienceSection';
 import FeaturedProjectSection from './components/FeaturedProjectSection';
 import SkillsSection from './components/SkillsSection';
@@ -19,6 +20,7 @@ export default function App() {
       <main className="relative z-10">
         <HeroSection />
         <AboutSection />
+        <EducationSection />
         <ExperienceSection />
         <FeaturedProjectSection />
         <SkillsSection />

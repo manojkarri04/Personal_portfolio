@@ -2,10 +2,12 @@ import { Github, Linkedin, Mail } from 'lucide-react';
 import { motion } from 'motion/react';
 
 export default function Footer() {
-  const socialLinks = [
-    { icon: Github, label: 'GitHub', href: '#' },
-    { icon: Linkedin, label: 'LinkedIn', href: '#' },
-    { icon: Mail, label: 'Email', href: 'mailto:' }
+   
+const socialLinks = [
+    { icon: Github, label: 'GitHub', href: 'https://github.com/manojkarri04' },
+    // Replace YOUR_LINKEDIN_USERNAME with your actual profile ID
+    { icon: Linkedin, label: 'LinkedIn', href: 'https://linkedin.com/in/YOUR_LINKEDIN_USERNAME' }, 
+    { icon: Mail, label: 'Email', href: 'mailto:karrimanoj30@gmail.com' }
   ];
 
   return (
