@@ -4,7 +4,6 @@ import ExperienceSection from './components/ExperienceSection';
 import FeaturedProjectSection from './components/FeaturedProjectSection';
 import SkillsSection from './components/SkillsSection';
 import AchievementsSection from './components/AchievementsSection';
-import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 
 export default function App() {
@@ -24,7 +23,6 @@ export default function App() {
         <FeaturedProjectSection />
         <SkillsSection />
         <AchievementsSection />
-        <ContactSection />
         <Footer />
       </main>
     </div>
